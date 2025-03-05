@@ -1,0 +1,231 @@
+
+/*Se lo hacemos al comodin para que se lo hagamos a toda la pagina, con el box-sizing,
+lo que va a hacer es que nos va a ajustar toda la pagina, nos va a controlar el tamaño de nuestros elementos para
+que nada sobresalga ni nada cuanto tu lo ajustes con los with,el list, y el text decoration a none,
+para que no salga ni el subrayado, ni los puntitos de las listas,el margin y el padding a 0 para centrar todo,
+el outline a 0 para que no haya contorno en toda la pagina font size para el tamaño de la letra y el vertical-align:baseline; me va alinear el texto conforme a los contenedores */
+*{box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+	padding: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+    }
+    /*Esto sirve para darle a la imagen el 100% del ancho*/
+     img{
+        max-width: 100%;
+    }
+        /*Para el fondo del menu principal sea verde y la letra de color blanco*/
+    .enlaces{
+        background-color: rgb(2, 61, 22);
+        color: white;
+    
+    }
+/*Para cuando pulses en los salga el fondo de color verde fosforito y el tamaño de la letra 18px*/
+    a:hover {
+  
+        background-color:#3cd670;
+        font-size: 18px;
+      }
+      /*Nos pone la barra de menu verde arriba en bloque y un space between para que s eponga a lo largo de la pagina y los margin with y padding para ajustarlo*/
+    .contenido{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       font-size: 1.2em;
+    }
+    /*los a del contenido la letra sea de color blanco*/
+    .contenido a{
+    color: white;
+    }
+    /*Para que el inicio blog contecto se ponga en forma de fila no de columna y con el colum-gap para que nos lo separe*/
+    .contenido ul{
+        display: flex;
+        column-gap: 1em;
+        
+    }
+/*un flex para ponerlo en bloque, el with para que se nos agrupe en funcion a mi ancho de pagina, un margin 0 para centrarlo, el justify-content para hacer la separacion entre elos y el alings center para centrar ya que si no se queda muy para arriba y no se queda perfecto*/
+    .cabecera{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /*Hacemos exactamente lo mismo que antes pero aqui no hace falta el alings center*/
+    nav ul{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    
+    /*Centramos la imagen con el with,margin y text-alincenter para centrar la letra dentro del recuadro rosa y ya lo terminamos de ajustar acorde al cubo con el padding de todo al 25%
+    le damos color con backgroung color y la letra con font size*/
+    #ros{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: palevioletred;
+        color: white;
+        font-weight: bolder;
+        font-size: 6em;
+        padding: 25px;
+    }
+    /*Dar tamaño a la letra*/
+    #gratis{
+        font-size: 7rem;
+    }
+    /*Contenedor de abajo del rosa el cual le hacemos un flex para ponerlo en bloque, space-betwenn para que se separen,
+    y with,margin, padding para ajustarlo y el background y color para darle color a la letra y al fondo*/
+    #negro{
+        color: white;
+        background-color: black;
+        margin: 0 auto;
+        width: 80%;
+      display: flex;
+      justify-content: space-between;
+      padding: 2em;
+      
+    }
+        /*Poner en negrita y darle ese tamña*/
+    #negro p{
+        font-size: 2em;
+        font-weight: bolder;
+    }
+        /*Cambiar el tamaño del contendor negro el p que tiene id neg a 1 em*/
+    #negro p#neg{
+        font-size: 1em;
+    }
+        /*el boton del contenedor negro hacerle un borde cuadrado de .5em de color oro y le ajusto los espacion con el padding*/
+    #negro button{
+        border-radius: .5em ;
+        background-color: gold;
+        padding: .5em 4em;
+    
+    }
+        /*Para ajustar las 3 fotos de abaho con las mismas etiquetas que antes*/
+    #trio{
+        width: 93%;
+        margin: 0 auto;
+        display: flex;
+      justify-content: space-around;
+        margin-top: .2em;
+      padding: 2em;
+      column-gap: -5em;
+    }
+   /*para añadirle a los articleque son cada cuadrado un fondo gris y el flex diretion colum para que se nos ponga en columna 
+   y despues el space between para dar espacion*/
+    #trio article{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(201, 201, 201);
+        justify-content: space-between;
+        padding-bottom: 1em;
+    }
+        /*Dar color a los botones del contenedor y quitarle el borde, dar espacio con el padding*/
+    #trio button{
+        background-color: gold;
+        border: none;
+         padding: .2em;
+    }
+        /*Al botton con id unir le ponemos color morado, lo ajustamos , le ajustamos los espacios con el padding y la letra de color blanco*/
+    #trio button#unir{
+        background-color: rgb(197, 40, 158);
+        border: none;
+         padding: .2em;
+         color: white;
+    }
+        /*Ajustar el espacio por debajo respeto al boton*/
+    #trio p{
+        padding-bottom: 1em;
+    }
+        /*Ponerle el contendor content color verde*/
+    #content{
+        background-color: rgb(2, 61, 22);
+    }
+        /*Hacemos lo mismo que las otras veces excepto que no utiliamos flex porque no hace falta para centrar 
+        la imagen a nuestro gusto, utilizo el backgroung image y el backgroung repeat;no-repeat para que no se repita ia imagen*/
+    #subscribir{
+        width: 80%;
+        color: white;
+        margin: 0 auto;
+        padding: 1em;
+        background-image: url(./imagenes/ico10.png) ;
+        background-repeat: no-repeat;
+        padding-left: 6em;
+    }
+        /*Dar tamaño y espacio por abajo al h2 del contenedor subscribir*/
+    #subscribir h2{
+        font-size: 1.2em;
+        padding-bottom: .5em;
+    
+    }
+        /*Lo mismo que ocn el h2*/
+    #subscribir p{
+        font-size: .8em;
+        padding-bottom: 1em;
+    }
+        /*Hacemos flex y justify para que se nos ponga en bloque y se nos separen las redes y margin with y aling pare,
+        centrar las imagenes a nuetro gusto*/
+    #redes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+        /*Para que el contenedor 2 de fotos que se llama red tenga ese tamañp*/
+    #redes div#red2{
+        width: 20%;
+    }
+        /*lo mismo que antes pero con la red 1 y las imagenes*/
+    #red1 img{
+        width: 5%;
+    }
+       /*igual que antes pero con el bloque entero de redes*/
+    #redes img{
+        height: 20%;
+    }
+        /*Para la parte del contenedor legal se ajuste en bloque se den espacio y ajustarlas conforme a nuestra pagina con margin y with*/
+    #legal{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+        /*Lo mismo que antes pero con el contenedor referencias*/
+    #referencias div{
+        display: flex;
+        justify-content: space-between;
+    width: 80%;
+        margin: 0 auto;
+        align-self: center;
+    }
+
+  
+    /*Esto lo he puesto ya que lo di el año pasado y lo he intentado hacer y mas o menos me ha quedado bien,
+    hacemos un max-with para adpatarlo al ancho de la pagina cuando lo minimizemos,
+    a la cabezera un flex diretion colum y un center para cuando lo achiquemos se ponga en forma de columna,
+    para ver todo y que se entienda, a los nav ul le hacemos lo mismo y a el footer lo centramos */
+    @media (max-width: 768px) {
+        .cabecera {
+          flex-direction: column;
+          text-align: center;
+        }
+      
+        nav ul {
+          flex-direction: column;
+          text-align: center;
+        }
+      
+    footer {
+        text-align: center;
+      }
+      
+      }
